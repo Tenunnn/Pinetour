@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+      body {
+        margin: 0;
+        font-family: "Bebas Neue", sans-serif;
+      }
+
+      .header-container {
+        background-image: url("HeroImage.png");
+        background-position: center;
+        background-size: cover;
+        height: 770px;
+        width: 100vw;
+        padding: 30px 118px;
+      }
+      .head-contents {
+        display: flex;
+        gap: 200px;
+        color: white;
+      }
+      .welcome-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        margin: 70px;
+      }
+      .hovercard {
+        background-image: url(Location\ image.png);
+        height: 512px;
+        padding: 30px 118px;
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .hovermap {
+        background-image: url(Roadmap.png);
+        width: 100%;
+        height: 1022px;
+        display: flex;
+      }
+      .Locations {
+        display: flex;
+        flex-direction: column;
+        width: 513px;
+        height: 112px;
+        margin: 40px;
+
+        font-size: 30px;
+      }
+      .Location-pics {
+        display: flex;
+      }
+      .Footer {
+        background-image: url(Price.png);
+        width: 100vw;
+        height: 1120px;
+        justify-content: space-between;
+      }
+      .Price-card1 {
+        background-color: white;
+        border: solid;
+        border-radius: 20px;
+        width: 384px;
+        height: 300px;
+        margin: 60px;
+        text-align: center;
+      }
+      .Price-card2 {
+        background-color: white;
+        border: solid;
+        border-radius: 20px;
+        width: 384px;
+        height: 300px;
+        margin: 60px;
+        text-align: center;
+      }
+
+      .Price-card3 {
+        background-color: white;
+        border: solid;
+        border-radius: 20px;
+        width: 384px;
+        height: 300px;
+        margin: 60px;
+        text-align: center;
+      }
+
+      .Cards {
+        display: flex;
+        gap: 40px;
+      }
+      #sukhbaatar-img {
+        background-image: url(suh.png);
+        height: 245px;
+        width: 245px;
+        background-size: cover; /* or contain */
+        background-position: center;
+        opacity: 0;
+        position: absolute;
+        left: 1000px;
+      }
+      .Sukh:hover ~ #sukhbaatar-img {
+        opacity: 1;
+      }
+      #amarbayasgalant-img {
+        background-image: url(Amarbaysgalant.png);
+        height: 245px;
+        width: 245px;
+        background-size: cover; /* or contain */
+        background-position: center;
+        opacity: 0;
+        position: absolute;
+        left: 900px;
+      }
+
+      .Amarbayasgalant:hover ~ #amarbayasgalant-img {
+        opacity: 1;
+      }
+      #khorgiin-img {
+        background-image: url(khorgiin.png);
+        height: 245px;
+        width: 245px;
+        background-size: cover; /* or contain */
+        background-position: center;
+        opacity: 0;
+        position: absolute;
+        left: 800px;
+      }
+
+      .pinetour {
+        background-size: cover;
+      }
+      #terkhiin-img {
+        background-image: url(Terkhiin.png);
+        height: 245px;
+        width: 245px;
+        background-size: cover; /* or contain */
+        background-position: center;
+        opacity: 0;
+        position: absolute;
+        left: 900px;
+      }
+      .terkh:hover ~ #terkhiin-img {
+        opacity: 1;
+      }
+      .khorgo:hover ~ #khorgiin-img {
+        opacity: 1;
+      }
+      #khuvs-img {
+        background-image: url(Khuvsgul.png);
+        height: 245px;
+        width: 245px;
+        background-size: cover; /* or contain */
+        background-position: center;
+        opacity: 0;
+        position: absolute;
+        left: 780px;
+      }
+
+      .khuvs:hover ~ #khuvs-img {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pinetour">
+      <div class="header-container">
+        <div class="head-contents">
+          <img style="width: 101px" src="logo.png" />
+          <div style="font-size: 18px">Home</div>
+          <div>About</div>
+          <div>Contact</div>
+          <img style="width: 20px; height: 20px" src="user.png" />
+          <div>EN</div>
+        </div>
+        <div class="welcome-center">
+          <div style="font-size: 80px; color: gray">PURE MAGIC</div>
+          <div style="font-size: 250px; color: white">AWAITS!</div>
+          <div style="font-size: 64px; color: white">2024</div>
+        </div>
+      </div>
+      <div class="hovercard">
+        <div
+          style="
+            background-image: url(Hover\ card\ image.png);
+            width: 275px;
+            height: 370px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+            border-radius: 30px;
+            font: a;
+          "
+        >
+          Terhiin Tsagaan Lake
+        </div>
+        <div
+          style="
+            background-image: url(Untitled.png);
+            width: 275px;
+
+            height: 370px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+            border-radius: 30px;
+            text-align: center;
+            font: a;
+          "
+        >
+          Amarbayasgalant Monastery
+        </div>
+        <div
+          style="
+            background-image: url(nigga.png);
+            width: 275px;
+
+            height: 370px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+            border-radius: 30px;
+            font: a;
+          "
+        >
+          Khuvsgul Lake
+        </div>
+        <div
+          style="
+            background-image: url(niggER.png);
+            width: 275px;
+
+            height: 370px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+            border-radius: 30px;
+            font: a;
+          "
+        >
+          Khorgiin Togoo
+        </div>
+      </div>
+      <div class="hovermap">
+        <div style="text-align: center; font-size: 40px">
+          Destination of Our Agency
+        </div>
+
+        <div style="font-size: 19px; text-align: center">
+          Pack Your Bags And Get Ready
+        </div>
+
+        <div class="Locations">
+          <div class="Sukh">
+            <div
+              style="
+                background-color: antiquewhite;
+                border: solid;
+                border-radius: 120px;
+                padding: 10px 20px;
+              "
+            >
+              Sukhbaatar square
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-end;
+                  font-size: 25px;
+                "
+              >
+                Day 1
+              </div>
+
+              <div style="font-size: 20px">
+                UlaanBator
+
+                <img src="Icon Container.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="Amarbayasgalant">
+            <div
+              style="
+                background-color: aqua;
+                border: solid;
+                border-radius: 70px;
+                padding: 10px 20px;
+              "
+            >
+              Amarbayasgalant Monastery
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-end;
+                  font-size: 25px;
+                "
+              >
+                Day 2
+              </div>
+              <div style="font-size: 20px">
+                Bulgan
+                <img src="Icon Container.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="khorgo">
+            <div
+              style="
+                background-color: aquamarine;
+                border: solid;
+                border-radius: 70px;
+
+                padding: 10px 20px;
+              "
+            >
+              Khorgiin togoo
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-end;
+                  font-size: 25px;
+                "
+              >
+                Day 3
+              </div>
+              <div style="font-size: 20px">
+                Arkhangai
+                <img src="Icon Container.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="terkh">
+            <div
+              style="
+                background-color: blue;
+                border: solid;
+                border-radius: 70px;
+                padding: 10px 20px;
+              "
+            >
+              Terkhiin Tsagaan lake
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-end;
+                  font-size: 25px;
+                "
+              >
+                Day 4
+              </div>
+              <div style="font-size: 20px">
+                Arkhangai
+                <img src="Icon Container.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="khuvs">
+            <div
+              style="
+                background-color: blueviolet;
+                border: solid;
+                border-radius: 70px;
+                padding: 10px 20px;
+              "
+            >
+              Khuvsgul lake
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-end;
+                  font-size: 25px;
+                "
+              >
+                Day 5
+              </div>
+              <div style="font-size: 20px">
+                Khuvsgul
+                <img src="Icon Container.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div id="sukhbaatar-img"></div>
+          <div id="amarbayasgalant-img"></div>
+          <div id="khorgiin-img"></div>
+          <div id="terkhiin-img"></div>
+          <div id="khuvs-img"></div>
+        </div>
+      </div>
+      <div class="Footer">
+        <div style="font-size: 42px; display: flex; justify-content: center">
+          Pricing of Our Agency
+        </div>
+        <div
+          style="
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            color: #18181bb2;
+          "
+        >
+          Choose A Package That's Right For You
+        </div>
+        <div class="Cards">
+          <div class="Price-card1">
+            <div style="font-size: 18px">
+              Budget Package
+              <img
+                style="width: 36px; height: 36px"
+                src="IconButton.png"
+                alt=""
+              />
+            </div>
+            <div style="font-size: 40px">500$</div>
+            <div style="font-size: 16px; color: #919191">
+              Essentials Covered
+            </div>
+            <div style="font-size: 18px">
+              Includes:
+              <img src="check.png" alt="" />
+            </div>
+            <div style="font-size: 14px">
+              Group Transportation(shared van/bus)
+              <img src="check.png" alt="" />
+            </div>
+            <div style="font-size: 14px">
+              Standard accommodation (yurt or guesthouse)
+              <img src="check.png" alt="" />
+            </div>
+            <div style="font-size: 14px">
+              Guided lake tour
+              <img src="check.png" alt="" />
+            </div>
+            <div style="font-size: 14px">
+              1 meal per day (breakfast)
+              <img src="check.png" alt="" />
+            </div>
+            <div
+              style="
+                font-size: 14px;
+                text-align: center;
+                background-color: blue;
+                border: solid;
+                border-radius: 40px;
+              "
+            >
+              Select Package
+            </div>
+          </div>
+          <div class="Price-card2">
+            <div style="font-size: 18px">
+              Budget Package
+              <img
+                style="width: 36px; height: 36px"
+                src="IconButton.png"
+                alt=""
+              />
+            </div>
+            <div style="font-size: 40px">800$</div>
+            <div style="font-size: 16px; color: #919191">
+              Balanced Adventure
+            </div>
+            <div style="font-size: 18px">
+              Includes:
+
+              <img src="check.png" alt="" />
+            </div>
+            <div style="font-size: 14px">
+              Comfortable transportation(mini-bus)
+              <img src="check.png" alt="" />
+            </div>
+            <div style="font-size: 14px">
+              Mid-range accommodation (Privvate yurt or lodge)
+              <img src="check.png" alt="" />
+            </div>
+            <div style="font-size: 14px">
+              Guided lake tour + nearby hiking
+              <img src="check.png" alt="" />
+            </div>
+            <div style="font-size: 14px">
+              2 meal per day (breakfast)
+              <img src="check.png" alt="" />
+            </div>
+            <div
+              style="
+                font-size: 14px;
+                text-align: center;
+                background-color: blue;
+                border: solid;
+                border-radius: 40px;
+              "
+            >
+              Select Package
+            </div>
+          </div>
+          <div class="Price-card3">
+            <div style="font-size: 18px">
+              Budget Package
+              <img
+                style="width: 36px; height: 36px"
+                src="IconButton.png"
+                alt=""
+              />
+            </div>
+            <div style="font-size: 40px">1200$</div>
+            <div style="font-size: 16px; color: #919191">Ultimate Comfort</div>
+            <div style="font-size: 18px">
+              Includes:
+              <img src="check.png" alt="" />
+            </div>
+            <div style="font-size: 14px">
+              Private transportation (SUV)
+              <img src="check.png" alt="" />
+            </div>
+            <div style="font-size: 14px">
+              Luxury accommodation (lakefort lodge)
+              <img src="check.png" alt="" />
+            </div>
+            <div style="font-size: 14px">
+              Guided lake tour(lake + reindeer herder experience)
+              <img src="check.png" alt="" />
+            </div>
+            <div style="font-size: 14px">
+              All meals included (local cuisine)
+              <img src="check.png" alt="" />
+            </div>
+            <div
+              style="
+                font-size: 14px;
+                text-align: center;
+                background-color: blue;
+                border: solid;
+                border-radius: 40px;
+              "
+            >
+              Select Package
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

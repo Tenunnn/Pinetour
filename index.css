@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.header-container {
+  background-image: url("HeroImage.png");
+  background-position: center;
+  background-size: cover;
+  height: 770px;
+  width: 100vw;
+  padding: 30px 118px;
+}
+.head-contents {
+  display: flex;
+  gap: 200px;
+  color: white;
+}
+.welcome-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.hovercard {
+  background-image: url(Location\ image.png);
+  height: 512px;
+  width: 100vw;
+  padding: 30px 118px;
+  display: flex;
+  gap: 20px;
+}
+.hovermap {
+  background-image: url(Roadmap.png);
+  width: 1440px;
+  height: 1022px;
+}
+.Locations {
+  display: flex;
+  flex-direction: column;
+  width: 513px;
+  height: 112px;
+  margin: 40px;
+  gap: 20px;
+  font-size: 30px;
+}
